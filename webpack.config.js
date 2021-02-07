@@ -35,6 +35,10 @@ module.exports = {
                 {
                     from: path.resolve(__dirname, 'src/favicon.ico'),
                     to: path.resolve(__dirname, 'dist')
+                },
+                {
+                    from: path.resolve(__dirname, 'src/img'),
+                    to: path.resolve(__dirname, 'dist/img')
                 }
             ],
         }),
@@ -47,9 +51,18 @@ module.exports = {
             {
                 test: /\.s[ac]ss$/i,
                 use: [
-                    MiniCssExtractPlugin.loader,
+                    // MiniCssExtractPlugin.loader,
+                    'style-loader',
                     'css-loader',
                     'sass-loader',
+                ],
+            },
+            {
+                test: /\.(png|jpe?g|gif)$/i,
+                use: [
+                    {
+                        loader: 'file-loader'
+                    },
                 ],
             },
         ],
