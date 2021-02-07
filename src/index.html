@@ -3,14 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="favicon.ico">
-    <title>Document</title>
+    <title>Snap</title>
 </head>
 <body>
-    <div id="root" class="container">
-        hello world!
-    </div>
+    <header id="root" class="header">
+        <div class="container">
+            <div class="header-nav">
+                <img src="./img/snapchat.svg" alt="our logo" class="header-nav_img_logo">
+                <ul class="header-nav_menu_ul">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Товары</a></li>
+                    <li><a href="#">Избранное</a></li>
+                    <li><a href="#">Корзина</a></li>
+                </ul>
+                <ul class="header-nav_region_ul">
+                    <li><a class="active">RUS</a></li>
+                    <li><a>EN</a></li>
+                </ul>
+                <button class="header-menu_burger">
+                    <img src="./img/menu.svg" alt="open burger menu">
+                </button>
+            </div>
+            <div class="header-content">
+                <div class="wrapper">
+                    <div class="header-content_left">
+                        <h1>Ghost React уже в продаже!</h1>
+                        <p>Высокая прочность и комфортная подушка идеально подойдут для бега</p>
+                        <div class="header-content_btn">
+                            <a href="#" class="btn">Подробнее</a>
+                        </div>
+                        <div class="header-content_arrow">
+                            <img src="./img/arrow.svg" alt="down arrow">
+                        </div>
+                    </div>
+                    <div id="video" class="header-content_right">
+                        <video id="1" width="440" height="271" controls="controls" poster="./img/video_poster_1.jpg">
+                            <source src="https://www.youtube.com/watch?v=__PZwj2b2RY&ab_channel=Nike">
+                        </video>
+                        <video width="440" height="271" controls="controls" poster="./img/video_poster_2.jpg">
+                            <source src="https://www.youtube.com/watch?v=Xtch0mxusRg&ab_channel=Nike">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="main-content">
+        <div class="container">
+            <h2>React 270</h2>
+            <div class="wrapper">
+                <div class="main-content_left">
+                    <p>Пеноматериал пришёл на замену материалу Lunarlon, по сравнению с которым новая пена ощутимо выигрывает в упругости, возврате энергии и отсутствии склонности к продавливанию.</p>
+                </div>
+                <div class="main-content_center">
+                    <p>Это в свою очередь сильно сказалось на ходовых качествах: лёгкие пробежки и повседневное использование – вот где React показывает себя с лучшей стороны.</p>
+                </div>
+                <div class="main-content_right">
+                    <img src="./img/play_red.svg">
+                    <p><a href="#video">Видео о нас</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
