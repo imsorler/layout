@@ -155,6 +155,23 @@ ul, li {
    & video {
      margin: 10px 0;
    }
+
+  .content-right_description {
+    max-width: 100%;
+    padding: 5px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    opacity: 0.7;
+    background-color: #fff;
+    color: #000;
+    text-transform: uppercase;
+    position: relative;
+    top: -162px;
+
+    & h3 {
+      margin: 0;
+    }
+  }
 }
 
 section {
